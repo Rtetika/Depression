@@ -107,7 +107,7 @@ def text_cl(raw_text):
 
 def Anxiety_detection(text):
     # column_1, column_2,column_3= st.beta_columns(3)
-    column_1, column_2 = st.beta_columns(2)
+    column_1, column_2 = st.columns(2)
     result1 = model1.predict(vect.transform([text]).toarray())[0]
     # result2 = model2.predict(vect.transform([text]).toarray())[0]
     column_1.write("Model Prediction: ")
